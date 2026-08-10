@@ -1,0 +1,2 @@
+Window,backend,seed,converged,iterations,final_log_likelihood_change,score,state_accuracy,balanced_accuracy,brier_score,confusion_matrix
+fixed holdout,hmmlearn,17,True,8,-0.00040321883352589794,-4898.907016475549,0.7989165763813652,0.8767284217885416,0.3610219499110536,"[[3211, 916], [12, 476]]"

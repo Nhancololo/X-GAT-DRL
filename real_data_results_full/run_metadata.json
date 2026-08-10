@@ -1,0 +1,190 @@
+{
+  "created_utc": "2026-08-06T21:37:18.428835+00:00",
+  "configuration": {
+    "start_date": "2008-01-02",
+    "end_date": "2026-08-04",
+    "out_of_sample_start": "2019-01-02",
+    "evaluation_mode": "fixed_holdout",
+    "benchmark_ticker": "SPY",
+    "risk_assets": [
+      {
+        "ticker": "SPY",
+        "label": "U.S. large-cap equity",
+        "group": "Equity"
+      },
+      {
+        "ticker": "QQQ",
+        "label": "U.S. growth equity",
+        "group": "Equity"
+      },
+      {
+        "ticker": "IWM",
+        "label": "U.S. small-cap equity",
+        "group": "Equity"
+      },
+      {
+        "ticker": "EFA",
+        "label": "Developed ex-U.S. equity",
+        "group": "Equity"
+      },
+      {
+        "ticker": "EEM",
+        "label": "Emerging-market equity",
+        "group": "Equity"
+      },
+      {
+        "ticker": "IEF",
+        "label": "7--10 year U.S. Treasury",
+        "group": "Treasury"
+      },
+      {
+        "ticker": "TLT",
+        "label": "20+ year U.S. Treasury",
+        "group": "Treasury"
+      },
+      {
+        "ticker": "LQD",
+        "label": "Investment-grade credit",
+        "group": "Credit"
+      },
+      {
+        "ticker": "HYG",
+        "label": "High-yield credit",
+        "group": "Credit"
+      },
+      {
+        "ticker": "GLD",
+        "label": "Gold",
+        "group": "Commodity"
+      },
+      {
+        "ticker": "DBC",
+        "label": "Broad commodities",
+        "group": "Commodity"
+      },
+      {
+        "ticker": "VNQ",
+        "label": "U.S. real estate",
+        "group": "Real estate"
+      }
+    ],
+    "cash_series": "DGS3MO",
+    "fred_series": [
+      "DGS3MO",
+      "VIXCLS",
+      "T10Y3M",
+      "BAMLH0A0HYM2",
+      "DCOILBRENTEU"
+    ],
+    "policy_seeds": [
+      101,
+      211,
+      307,
+      401,
+      503
+    ],
+    "temporal_modes": [
+      "hybrid",
+      "gru",
+      "lstm"
+    ],
+    "validation_fraction": 0.15,
+    "annual_training_years": 8,
+    "minimum_annual_test_observations": 63,
+    "minimum_training_observations": 360,
+    "periods_per_year": 252,
+    "transaction_cost": 0.001,
+    "slippage_coefficient": 5e-05,
+    "impact_coefficient": 0.0002,
+    "maximum_cash": 1.0,
+    "ppo_episodes": 200,
+    "benchmark_epochs": 100,
+    "block_bootstraps": 5000,
+    "block_length": 20,
+    "confidence_level": 0.95,
+    "output_dir": "real_data_results_full",
+    "cache_dir": "real_data_cache",
+    "refresh_data": false,
+    "local_prices_csv": null,
+    "local_volumes_csv": null,
+    "local_macro_csv": null,
+    "continue_on_error": false,
+    "quick": false
+  },
+  "methods": [
+    "X-GAT-DRL (Hybrid)",
+    "X-GAT-DRL (GRU)",
+    "X-GAT-DRL (LSTM)",
+    "1/N",
+    "GMV",
+    "HMM-GMV",
+    "GLASSO-GAT",
+    "TC-MAC",
+    "JM-MPC"
+  ],
+  "xgat_temporal_modes": [
+    "hybrid",
+    "gru",
+    "lstm"
+  ],
+  "xgat_temporal_method_labels": {
+    "hybrid": "X-GAT-DRL (Hybrid)",
+    "gru": "X-GAT-DRL (GRU)",
+    "lstm": "X-GAT-DRL (LSTM)"
+  },
+  "successful_policy_seeds": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "sample_start": "2008-01-03T00:00:00",
+  "sample_end": "2026-08-04T00:00:00",
+  "out_of_sample_start": "2019-01-02T00:00:00",
+  "out_of_sample_end": "2026-08-04T00:00:00",
+  "data_sources": {
+    "market": "Yahoo Finance chart endpoint",
+    "cash_and_macro": "FRED CSV endpoint"
+  },
+  "code_hashes": {
+    "real_data_application.py": "cb5a9929fcb8df96531872578b0e052a8422e8d2a9057846538123ccca7d75fc",
+    "simulations.py": "3350e3a0e2429a2b97d6fe13b7e2716258dd0e5d5131a132ecb7cad0dd549b80",
+    "xgat_drl_code.py": "6a90200cdea488a5b37d9e9f8e078f06d5ac0dfc6b1a6880f16281c5cae6ac7d"
+  },
+  "interface_audit": {
+    "base_simulation_method_order": [
+      "X-GAT-DRL",
+      "1/N",
+      "GMV",
+      "HMM-GMV",
+      "GLASSO-GAT",
+      "TC-MAC",
+      "JM-MPC"
+    ],
+    "supported_temporal_modes": [
+      "hybrid",
+      "gru",
+      "lstm"
+    ],
+    "core_path": "/home/almonha/Music/Capstone project papers/Project/code/xgat_drl_code.py",
+    "core_sha256": "6a90200cdea488a5b37d9e9f8e078f06d5ac0dfc6b1a6880f16281c5cae6ac7d",
+    "simulations_path": "/home/almonha/Music/Capstone project papers/Project/code/simulations.py",
+    "simulations_sha256": "3350e3a0e2429a2b97d6fe13b7e2716258dd0e5d5131a132ecb7cad0dd549b80",
+    "compatibility_adapters": [
+      "Mapped current PPO gate diagnostics to the labels expected by simulations.py.",
+      "Adapted the legacy Sharpe-ratio keyword interface used by simulations.py."
+    ],
+    "real_data_method_order": [
+      "X-GAT-DRL (Hybrid)",
+      "X-GAT-DRL (GRU)",
+      "X-GAT-DRL (LSTM)",
+      "1/N",
+      "GMV",
+      "HMM-GMV",
+      "GLASSO-GAT",
+      "TC-MAC",
+      "JM-MPC"
+    ]
+  }
+}

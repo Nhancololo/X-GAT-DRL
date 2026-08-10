@@ -1,0 +1,10 @@
+Method,MCS survivor
+X-GAT-DRL (Hybrid),True
+X-GAT-DRL (GRU),True
+X-GAT-DRL (LSTM),True
+1/N,True
+GMV,True
+HMM-GMV,True
+GLASSO-GAT,True
+TC-MAC,False
+JM-MPC,True

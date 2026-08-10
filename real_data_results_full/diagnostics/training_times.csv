@@ -1,0 +1,26 @@
+Window,Policy seed,Method,Training seconds,Final multipliers
+fixed holdout,101,X-GAT-DRL (Hybrid),407.9874270639848,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,101,X-GAT-DRL (GRU),117.69502424588427,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,101,X-GAT-DRL (LSTM),140.79572988906875,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,101,GLASSO-GAT,158.39194928994402,
+fixed holdout,101,TC-MAC,282.90559632261284,
+fixed holdout,211,X-GAT-DRL (Hybrid),226.00657593319193,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,211,X-GAT-DRL (GRU),378.23767140414566,"{""cvar"": 0.0, ""drawdown"": 0.000633849971606928, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,211,X-GAT-DRL (LSTM),224.79177968087606,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,211,GLASSO-GAT,133.88313345820643,
+fixed holdout,211,TC-MAC,240.80345430411398,
+fixed holdout,307,X-GAT-DRL (Hybrid),289.2593414799776,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,307,X-GAT-DRL (GRU),134.03957408294082,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,307,X-GAT-DRL (LSTM),256.46184132108465,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,307,GLASSO-GAT,160.53527819737792,
+fixed holdout,307,TC-MAC,285.87167604570277,
+fixed holdout,401,X-GAT-DRL (Hybrid),372.28147502988577,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,401,X-GAT-DRL (GRU),160.85360833117738,"{""cvar"": 0.0001842213794878034, ""drawdown"": 0.004416491387346071, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,401,X-GAT-DRL (LSTM),126.05163216893561,"{""cvar"": 0.00046694919274742564, ""drawdown"": 0.005883444791693857, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,401,GLASSO-GAT,178.04542841459624,
+fixed holdout,401,TC-MAC,316.80517370649613,
+fixed holdout,503,X-GAT-DRL (Hybrid),266.45479339989834,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,503,X-GAT-DRL (GRU),145.57205763994716,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,503,X-GAT-DRL (LSTM),227.90250445809215,"{""cvar"": 0.0, ""drawdown"": 0.0, ""hhi"": 0.0, ""turnover"": 0.0}"
+fixed holdout,503,GLASSO-GAT,168.220448395703,
+fixed holdout,503,TC-MAC,299.2073062185664,
