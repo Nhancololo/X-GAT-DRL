@@ -1,0 +1,2 @@
+# X-GAT-DRL
+This repository contains the official code to reproduce the Monte Carlo simulations and out-of-sample empirical applications presented in the paper for X-GAT-DRL. The framework introduces a dynamic portfolio allocation approach that integrates regime-dependent financial networks (predictive and risk graphs), risk-constrained Deep Reinforcement Learning (DRL), and portfolio simplex-compatible exploration to manage downside risk and optimize risk-adjusted returns.
